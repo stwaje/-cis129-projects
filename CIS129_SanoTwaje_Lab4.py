@@ -5,14 +5,11 @@
 
 # The main function
 def main():
-
     # declare local variables
-
     # monthlySales = monthly sales amount
     # storeAmount = store bonus amount
     # empAmount = employee bonus amount
     # salesIncrease = percent of sales increase
-
     # call to getsSales(monthlySales)
     # call to getIncrease(salesIncrease)
     # call to calcStoreBonus(storeAmount)
@@ -22,13 +19,13 @@ def main():
 # This function get the monthly sales
     def getSales(prompt):
         monthlySales = float(input('Enter montly sales: '))
-        return monthlySales
+        return monthlySales()
                  
 # This function gets the percent in sales
     def getIncrease(prompt):
         salesIncrease = float(input('Enter sales increase: '))
         salesIncrease = salesIncrease / 100
-        return salesIncrease
+        return salesIncrease()
 
 # This function determines the storeAmount bonus
     def calcStoreBonus(monthlySales):
@@ -42,7 +39,7 @@ def main():
             storeAmount =3000
         else:
             storeAmount = 0
-        return monthlySales
+        return monthlySales()
 
 # This function deteremins the empAmount bonus
     def calcEmpBonus(empAmount):
@@ -54,7 +51,7 @@ def main():
             empAmount = 40
         else:
             empAmount = 0
-    return empAmount 
+        return empAmount() 
 
 # This function prints the bonus information
     def printBonus(storeAmount, empAmount):
